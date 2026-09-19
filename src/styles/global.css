@@ -1,0 +1,118 @@
+@import './tokens.css';
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+
+  background-image: url('../assets/bg-derketo.png');
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+#app {
+  width: 70%;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: left;
+}
+
+/* Form controls */
+select,
+input,
+textarea {
+  box-sizing: border-box;
+  width: 100%;
+  margin-top: 2px;
+  margin-bottom: 0;
+  padding: 0.6em 1.2em;
+  border: 1px solid transparent;
+  border-radius: var(--radius-control);
+  font-family: inherit;
+  font-size: 1em;
+  font-weight: 500;
+  color: white;
+  background-color: var(--color-surface-control);
+  cursor: pointer;
+  transition: border-color 0.25s;
+  resize: none;
+}
+
+textarea {
+  height: var(--textarea-height, auto);
+}
+
+select:hover,
+input:hover,
+textarea:hover {
+  border-color: var(--color-accent);
+}
+
+select:focus,
+input:focus,
+textarea:focus {
+  outline: 2px solid var(--color-accent);
+}
+
+button {
+  padding: 0.6em 1.2em;
+  border: 1px solid transparent;
+  border-radius: var(--radius-control);
+  font-family: inherit;
+  font-size: 1em;
+  font-weight: 500;
+  color: white;
+  background-color: var(--color-surface);
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+button:hover {
+  border-color: var(--color-accent);
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+:disabled {
+  background-color: var(--color-disabled-bg);
+  color: black;
+  opacity: 1;
+}
+
+:disabled:hover {
+  border-color: var(--color-disabled-bg);
+  cursor: not-allowed;
+}
+
+@media screen and (max-width: 1900px) {
+  #app {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  textarea {
+    height: 200px;
+  }
+}

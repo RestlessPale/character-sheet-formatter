@@ -1,0 +1,15 @@
+:root {
+  --color-accent: #646cff;
+  --color-ok: #31c48d;
+  --color-warn: orange;
+  --color-error: rgb(233, 32, 32);
+  --color-muted: rgb(160, 160, 160);
+  --color-surface: #1a1a1a;
+  --color-surface-control: rgba(26, 26, 26, 0.6);
+  --color-surface-badge: rgb(41, 44, 48);
+  --color-disabled-bg: #0f0f0f;
+
+  --radius-control: 8px;
+  --radius-box: 0.25rem;
+  --radius-section: 16px;
+}
